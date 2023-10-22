@@ -1,12 +1,10 @@
-package lessons.Lesson16.set;
+package lessons.lesson16.set;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class HashSetExample {
-    static HashSet<String> mySet = new HashSet<>();
+public class LinkedHashSetExample {
+    static LinkedHashSet<String> mySet = new LinkedHashSet<>();
 
     public static void main(String[] args) {
         addMethodExample(mySet);
@@ -16,7 +14,6 @@ public class HashSetExample {
         sizeMethodExample(mySet);
         clearMethodExample(mySet);
         isemptyMethodExample(mySet);
-        howGetSetExample(mySet, 0);
 
 
         /*int[] arr = {1, 2, 3, 4, 5};
@@ -61,10 +58,4 @@ public class HashSetExample {
         addMethodExample(someset);
         System.out.println("Is set empty? " + someset.isEmpty());
     }
-
-    static void howGetSetExample(Set<String> someset, int element) {
-        List<String> myList = new ArrayList<>(someset);
-        System.out.println("Get set example " + myList.get(0));
-    }
-
 }

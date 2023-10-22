@@ -1,4 +1,4 @@
-package lessons.Lesson16.set;
+package lessons.lesson16.set;
 
 import java.util.SortedSet;
 import java.util.TreeSet;
