@@ -1,4 +1,4 @@
-package lessons.Lesson16.Iterators;
+package lessons.lesson16.Iterators;
 
 import java.util.ArrayList;
 import java.util.Iterator;
