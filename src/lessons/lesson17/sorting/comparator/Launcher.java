@@ -5,7 +5,7 @@ import java.util.TreeSet;
 public class Launcher {
     public static void main(String[] args) {
         CarCompararorByYear carCompararorByYear = new CarCompararorByYear();
-        TreeSet<Car> carTreeSet = new TreeSet<>(new CarCompararorByYear());
+        TreeSet<Car> carTreeSet = new TreeSet<>(carCompararorByYear);
         carTreeSet.add(new Car("Volvo", 2005));
         carTreeSet.add(new Car("BMW", 2020));
         carTreeSet.add(new Car("Mercedes", 2016));
