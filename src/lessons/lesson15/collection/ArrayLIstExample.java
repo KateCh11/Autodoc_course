@@ -10,15 +10,15 @@ public class ArrayLIstExample {
     public static void main(String[] args) {
 
         addMethod(myList);
-        addByIndex(myList, 1);
-        getMethodByIndex(myList,0);
-        indexOfMethod(myList, "Alex");
-        indexOfMethod(myList, "Sasha");
-        indexOfMethod(myList, "Kostya");
-        setMethod(myList, 0, "Sasha");
-        removeMethodByIndex(myList, 0);
-        removeMethodByObject(myList, "Maks");
-        System.out.println(myList.size());
+        //addByIndex(myList, 1);
+        //getMethodByIndex(myList,0);
+        //indexOfMethod(myList, "Alex");
+        //indexOfMethod(myList, "Sasha");
+        //indexOfMethod(myList, "Kostya");
+        //setMethod(myList, 0, "Sasha");
+        //removeMethodByIndex(myList, 0);
+        //removeMethodByObject(myList, "Maks");
+        //System.out.println(myList.size());
     }
 
     public static void addMethod(List<String> someList){
