@@ -19,6 +19,8 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Selenide.sleep;
+
 public class AddItemToTheBasket extends WebDriverInitHW {
 
     final String EXPECTED_TITLE = "Ноутбук Lenovo IdeaPad 3 15IAU7 (82RK00TWRA) Arctic Grey / 15.6\" IPS Full HD / Intel Core i5-1235U / RAM 16 ГБ / SSD 512 ГБ / Підсвічування клавіатури";
@@ -26,6 +28,7 @@ public class AddItemToTheBasket extends WebDriverInitHW {
     @Test
     public void firstTest() {
 
+        /*
         //1. Открыть https://rozetka.com.ua/
         driver.get("https://rozetka.com.ua/");
 
@@ -39,10 +42,22 @@ public class AddItemToTheBasket extends WebDriverInitHW {
                 By.xpath("//ul[contains(@class, 'menu-categories_type_main')]/li[1]"));
         compAndLaptop.click();
 
+
         //3. Перейти в раздел « Ноутбуки» //click Laptop
         WebElement sectionLaptop = driver.findElement(
                 By.xpath("(//a[contains(@href, 'c80004/')])[1]"));
         sectionLaptop.click();
+
+
+         */
+
+        driver.get("https://rozetka.com.ua/ua/notebooks/c80004/");
+
+        //Resize current window to the set dimension
+        driver.manage().window().maximize();
+
+        sleep(15000);
+
 
         //Запомнить title первого товара
         WebElement titleOfFirstProduct = driver.findElement(
